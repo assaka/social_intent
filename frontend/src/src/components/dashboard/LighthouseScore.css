@@ -1,0 +1,125 @@
+.lhscore-container {
+  background: #f2fffd;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  padding: 40px 32px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+.lhscore-header {
+  text-align: left;
+  margin-bottom: 24px;
+}
+.lhscore-url {
+  font-size: 2.2rem;
+  font-family: "Fira Mono", "Consolas", monospace;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 0.04em;
+  border-bottom: 5px solid #5a4fcf;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.lhscore-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.lhscore-overall {
+  position: relative;
+  width: 260px;
+  text-align: center;
+}
+.lhscore-bg-circle {
+  stroke: #d2f2ef;
+}
+.lhscore-fg-circle {
+  stroke: #ff763b;
+  transition: stroke-dasharray 0.6s cubic-bezier(0.4, 2, 0.6, 1);
+}
+.lhscore-overall-value {
+  font-size: 4.5rem;
+  font-family: "Fira Mono", "Consolas", monospace;
+  font-weight: 700;
+  fill: #ff763b;
+}
+.lhscore-overall-label {
+  font-size: 2rem;
+  font-family: "Fira Mono", "Consolas", monospace;
+  fill: #ff763b;
+  font-weight: 500;
+}
+.lhscore-overall-text {
+  font-size: 1.5rem;
+  font-family: "Fira Mono", "Consolas", monospace;
+  color: #222;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+.lhscore-overall-status {
+  font-size: 1.2rem;
+  color: #3a2c2c;
+  font-family: "Fira Mono", "Consolas", monospace;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.lhscore-details {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+.lhscore-detail-box {
+  min-width: 160px;
+  min-height: 90px;
+  border-radius: 10px;
+  background: #ffe2d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 18px 0 10px 0;
+}
+.lhscore-detail-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+  font-family: "Fira Mono", "Consolas", monospace;
+}
+.lhscore-detail-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  font-family: "Fira Mono", "Consolas", monospace;
+}
+.lhscore-detail-analytics {
+  background: #ffe2d2;
+  border-top: 4px solid #ff763b;
+}
+.lhscore-detail-ads {
+  background: #ffe2d2;
+  border-top: 4px solid #ff763b;
+}
+.lhscore-detail-cookie_lifetime {
+  background: #fff6f6;
+  border-top: 4px solid #e05a6a;
+}
+.lhscore-detail-page_speed {
+  background: #c6eafd;
+  border-top: 4px solid #3bb0ff;
+}
+@media (max-width: 900px) {
+  .lhscore-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lhscore-details {
+    margin-top: 24px;
+    gap: 16px;
+  }
+}
